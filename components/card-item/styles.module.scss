@@ -1,0 +1,39 @@
+@import '../../assets/styles/constants/colors.scss';
+@import '../../assets/styles/constants/typography.scss';
+
+.card-item {
+    flex: 1;
+    margin: 0.3125rem;
+    list-style: none;
+    background-color: $white;
+    position: relative;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100%;
+    }
+
+    figure {
+        margin: 0;
+        display: grid;
+        place-content: center;
+        padding: 0.625rem 0.3125rem;
+    }
+}
+
+.card-info {
+    padding: 0.625rem 1.25rem;
+    width: 85%;
+    
+    p {
+        font-weight: $fw-bold;
+
+        &:last-of-type {
+            color: $blue;
+        }
+    }
+}
