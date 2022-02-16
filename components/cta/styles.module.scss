@@ -1,0 +1,23 @@
+@import '../../assets/styles/constants/colors.scss';
+@import '../../assets/styles/constants/typography.scss';
+
+.button {
+  display: inline-block;
+  background-color: transparent;
+  border-width: 0.125rem;
+  border-style: solid;
+  border-color: $blue;
+  color: $blue;
+  font-size: 1.25rem;
+  font-weight: $fw-bold;
+  line-height: 1.5;
+  padding: 0.625rem;
+  transition: border-color .3s, background-color .3s, color .3s;
+  will-change: border-color, background-color, color;
+
+  &:hover {
+    background-color: $yellow;
+    border-color: transparent;
+    color: $orange;
+  }
+}
