@@ -1,0 +1,29 @@
+@import '../../assets/styles/constants/colors.scss';
+@import '../../assets/styles/constants/typography.scss';
+
+.header {
+    div{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.25rem 1.875rem;
+        
+        > * {
+            flex: 1;
+        }
+    }
+}
+
+.logo {
+    display: inline-block;
+    margin-bottom: 1rem;
+
+    h1 {
+        color: $orange;
+        font-weight: $fw-regular;
+        display: inline-block;
+        padding: 0.3125rem;
+        margin: 0;
+    }
+}

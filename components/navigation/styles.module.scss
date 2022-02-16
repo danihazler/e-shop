@@ -1,0 +1,33 @@
+@import '../../assets/styles/constants/colors.scss';
+@import '../../assets/styles/constants/typography.scss';
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+
+        a {
+            display: inline-block;
+            padding: 0.625rem;
+            margin: 0 0.3125rem;
+            text-transform: capitalize;
+            position: relative;
+            background-image: linear-gradient(to right, $orange, $orange);
+            background-position: 0 85%;
+            background-repeat: no-repeat;
+            background-size: 0% 0.125rem;
+            transition: background-size .3s ease;
+
+            &:hover,
+            &:active {
+                background-size: 100% 2px;
+            }
+        }
+    }
+}

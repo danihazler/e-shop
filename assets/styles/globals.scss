@@ -31,3 +31,15 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+button,
+a {
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
+  width: 100%;
+}
