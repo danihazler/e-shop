@@ -1,5 +1,12 @@
+import { HeadHolder } from "components/head";
+
 const PageSale = () => {
-  return <h2>Sale page</h2>;
+  return (
+    <>
+      <HeadHolder title="Sale" keywords="sale clothing" />
+      <h2>Sale page</h2>
+    </>
+  );
 };
 
 export default PageSale;

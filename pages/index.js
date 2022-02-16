@@ -1,16 +1,11 @@
-import Head from "next/head";
 import { Banner } from "components/banner";
+import { HeadHolder } from "components/head";
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>eShop</title>
-        <meta name="description" content="eShop app" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+    <>
+      <HeadHolder title="" keywords="clothing" />
       <Banner />
-    </div>
+    </>
   );
 }
