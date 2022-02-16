@@ -29,5 +29,23 @@
                 background-size: 100% 2px;
             }
         }
+
+        li {
+            &:last-of-type {
+                a {
+                    background-image: none;
+                    svg{
+                        transition: fill .3s;
+                    }
+
+                    &:hover,
+                    &:active {
+                        svg {
+                            fill: $orange;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
