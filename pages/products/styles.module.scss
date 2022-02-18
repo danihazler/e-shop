@@ -52,7 +52,10 @@
 .info {
     flex: 1;
     padding: 1.25rem;
-    max-width: 65%;
+    
+    @media screen and (min-width: $bpSmall) {
+        max-width: 65%;
+    }
 
     p {
         /* description */

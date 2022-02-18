@@ -5,8 +5,12 @@
 
 .header {
     box-shadow: rgb(47 138 190 / 100%) 0px 6px 27px -28px;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     line-height: 1;
+
+    @media screen and (min-width: $bpSmall) {
+        margin-bottom: 3rem;
+    }
     
     div {
         display: flex;
