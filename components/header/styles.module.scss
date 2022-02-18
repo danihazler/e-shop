@@ -4,7 +4,10 @@
 
 
 .header {
-    div{
+    box-shadow: rgb(47 138 190 / 100%) 0px 6px 27px -28px;
+    margin-bottom: 3rem;
+    
+    div {
         display: flex;
         justify-content: space-between;
         flex-direction: column;

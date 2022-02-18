@@ -8,11 +8,16 @@
     background-color: $white;
     position: relative;
 
-    article {
+    a {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        height: 100%;
+        width: 100%;
+    }
+
+    article {
         height: 100%;
         width: 100%;
     }
@@ -28,7 +33,11 @@
 .card-info {
     padding: 0.625rem 1.25rem;
     width: 85%;
-    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     p {
         font-weight: $fw-bold;
 

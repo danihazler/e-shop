@@ -1,0 +1,48 @@
+@import '../../assets/styles/constants/colors.scss';
+@import '../../assets/styles/constants/breakpoints.scss';
+@import '../../assets/styles/constants/typography.scss';
+
+.product-detail {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $bpMedium) {
+        flex-direction: row;
+    }
+}
+
+.image {
+    flex: 1.5;
+    flex-shrink: 2;
+    display: grid;
+    place-items: center;
+    padding: 1.25rem;
+    
+    @media screen and (min-width: $bpMedium) {
+        margin-right: 3%;
+    }
+    
+    @media screen and (min-width: $bpLarge) {
+        border-right: 2px solid $yellow;
+    }
+}
+
+.info {
+    flex: 1;
+    padding: 1.25rem;
+    max-width: 65%;
+
+    p {
+        /* description */
+        &:first-of-type {
+            letter-spacing: 0.025rem;
+        }
+
+        /* price */
+        &:last-of-type {
+            color: $blue;
+            font-size: 1.2rem;
+            font-weight: $fw-bold;
+        }
+    }
+}

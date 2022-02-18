@@ -9,6 +9,7 @@ export const CardGrid = ({ items }) => {
           return (
             <CardItem
               key={item.id}
+              id={item.id}
               img={item.image}
               title={item.title}
               price={item.price}

@@ -8,6 +8,7 @@
     ul {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         list-style: none;
         padding: 0;
         margin: 0;
@@ -16,7 +17,6 @@
             display: inline-block;
             padding: 0.625rem;
             margin: 0 0.3125rem;
-            text-transform: capitalize;
             position: relative;
             background-image: linear-gradient(to right, $orange, $orange);
             background-position: 0 85%;
@@ -31,9 +31,12 @@
         }
 
         li {
+            /* basket */
             &:last-of-type {
                 a {
                     background-image: none;
+                    padding: 0;
+
                     svg{
                         transition: fill .3s;
                     }

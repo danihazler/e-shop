@@ -3,11 +3,11 @@
 
 .button {
   display: inline-block;
-  background-color: transparent;
+  background-color: $yellow;
+  border-color: transparent;
+  color: $orange;
   border-width: 0.125rem;
   border-style: solid;
-  border-color: $blue;
-  color: $blue;
   font-size: 1.25rem;
   font-weight: $fw-bold;
   line-height: 1.5;
@@ -17,7 +17,7 @@
 
   &:hover {
     background-color: $yellow;
-    border-color: transparent;
-    color: $orange;
+    border-color: $blue;
+    color: $blue;
   }
 }

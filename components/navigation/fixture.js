@@ -1,14 +1,18 @@
 export const links = [
   {
-    name: "women",
+    name: "All",
+    url: "/products",
+  },
+  {
+    name: "Women",
     url: "/women",
   },
   {
-    name: "men",
+    name: "Men",
     url: "/men",
   },
   {
-    name: "sale",
+    name: "Sale",
     url: "/sale",
   },
 ];
