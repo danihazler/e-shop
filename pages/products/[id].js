@@ -39,7 +39,7 @@ const ProductDetail = ({ product }) => {
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch("https://fakestoreapi.com/products");
+  const res = await fetch("http://localhost:3001/products");
   const data = await res.json();
 
   const paths = data.map((item) => {
@@ -54,7 +54,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const id = context.params.id;
-  const res = await fetch(`https://fakestoreapi.com/products/${id}`);
+  const res = await fetch(`http://localhost:3001/products/${id}`);
   const data = await res.json();
 
   return {
