@@ -11,6 +11,9 @@ const ProductDetail = ({ product }) => {
   return (
     <>
       <HeadHolder title="Product detail" keywords="men women clothing" />
+      <p className={styles.category}>
+        <span>Category :</span> {product.category.replace('clothing', '')}
+      </p>
       <section className={styles["product-detail"]}>
         <div className={styles.image}>
           <Image

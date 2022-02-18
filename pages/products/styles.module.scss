@@ -2,6 +2,28 @@
 @import '../../assets/styles/constants/breakpoints.scss';
 @import '../../assets/styles/constants/typography.scss';
 
+.category {
+    text-transform: capitalize;
+    padding: 1.25rem 1.875rem;
+    font-size: 1.25rem;
+
+    span {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 0.315rem;
+
+        &:after {
+            content: '';
+            width: 90%;
+            height: 3px;
+            background-color: $blue;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
 .product-detail {
     display: flex;
     flex-direction: column;

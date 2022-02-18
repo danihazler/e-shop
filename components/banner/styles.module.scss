@@ -11,12 +11,9 @@
     position: relative;
     overflow: hidden;
 
-    > * {
-        flex: 1;
-    }
-
     figure {
         margin: 0;
+        flex: 2;
 
         span {
             display: block !important;
@@ -30,6 +27,7 @@
 
 .info {
     padding: 1.25rem;
+    flex: 1;
 
     @media screen and (min-width: $bpSmall) {
         padding: 1.25rem 1.25rem 1.25rem 2.5rem;
