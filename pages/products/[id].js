@@ -29,7 +29,7 @@ const ProductDetail = ({ product }) => {
         <div className={styles.info}>
           <h2>{product.title}</h2>
           <p>{product.description}</p>
-          <p>U$ {product.price}</p>
+          <p>U$ {product.price.toFixed(2)}</p>
           {/* TODO: add quantity option */}
           <Cta label="Add to basket" handleClick={handleClick} />
         </div>

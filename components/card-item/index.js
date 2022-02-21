@@ -24,7 +24,7 @@ export const CardItem = ({ id, img, title, price }) => {
             </figure>
             <div className={styles["card-info"]}>
               <p>{title}</p>
-              <p>U${price}</p>
+              <p>U${price.toFixed(2)}</p>
               {/* TODO: Add functionality  */}
               <Cta
                 label="Add to basket"
