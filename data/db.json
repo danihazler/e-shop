@@ -9,7 +9,21 @@
     "rating": {
       "rate": 3.9,
       "count": 120
-    }
+    },
+    "sizes": [
+      {
+        "name": "Small",
+        "size_stock": 5
+      },
+      {
+        "name": "Medium",
+        "size_stock": 0
+      },
+      {
+        "name": "Large",
+        "size_stock": 3
+      }
+    ]
   },
   {
     "id": 2,
@@ -21,7 +35,21 @@
     "rating": {
       "rate": 4.1,
       "count": 259
-    }
+    },
+    "sizes": [
+      {
+        "name": "Small",
+        "size_stock": 5
+      },
+      {
+        "name": "Medium",
+        "size_stock": 2
+      },
+      {
+        "name": "Large",
+        "size_stock": 2
+      }
+    ]
   },
   {
     "id": 3,
@@ -33,7 +61,21 @@
     "rating": {
       "rate": 4.7,
       "count": 500
-    }
+    },
+    "sizes": [
+      {
+        "name": "Small",
+        "size_stock": 0
+      },
+      {
+        "name": "Medium",
+        "size_stock": 10
+      },
+      {
+        "name": "Large",
+        "size_stock": 3
+      }
+    ]
   },
   {
     "id": 4,
@@ -45,7 +87,21 @@
     "rating": {
       "rate": 2.1,
       "count": 430
-    }
+    },
+    "sizes": [
+      {
+        "name": "Small",
+        "size_stock": 15
+      },
+      {
+        "name": "Medium",
+        "size_stock": 10
+      },
+      {
+        "name": "Large",
+        "size_stock": 3
+      }
+    ]
   },
   {
     "id": 6,
@@ -57,7 +113,21 @@
     "rating": {
       "rate": 3.9,
       "count": 70
-    }
+    },
+    "sizes": [
+      {
+        "name": "Small",
+        "size_stock": 0
+      },
+      {
+        "name": "Medium",
+        "size_stock": 0
+      },
+      {
+        "name": "Large",
+        "size_stock": 2
+      }
+    ]
   },
   {
     "id": 7,
@@ -69,7 +139,21 @@
     "rating": {
       "rate": 3,
       "count": 400
-    }
+    },
+    "sizes": [
+      {
+        "name": "Small",
+        "size_stock": 5
+      },
+      {
+        "name": "Medium",
+        "size_stock": 3
+      },
+      {
+        "name": "Large",
+        "size_stock": 3
+      }
+    ]
   },
   {
     "id": 8,
@@ -81,7 +165,21 @@
     "rating": {
       "rate": 1.9,
       "count": 100
-    }
+    },
+    "sizes": [
+      {
+        "name": "Small",
+        "size_stock": 0
+      },
+      {
+        "name": "Medium",
+        "size_stock": 0
+      },
+      {
+        "name": "Large",
+        "size_stock": 0
+      }
+    ]
   },
   {
     "id": 15,
@@ -93,7 +191,21 @@
     "rating": {
       "rate": 2.6,
       "count": 235
-    }
+    },
+    "sizes": [
+      {
+        "name": "Small",
+        "size_stock": 5
+      },
+      {
+        "name": "Medium",
+        "size_stock": 8
+      },
+      {
+        "name": "Large",
+        "size_stock": 3
+      }
+    ]
   },
   {
     "id": 16,
@@ -105,7 +217,21 @@
     "rating": {
       "rate": 2.9,
       "count": 340
-    }
+    },
+    "sizes": [
+      {
+        "name": "Small",
+        "size_stock": 5
+      },
+      {
+        "name": "Medium",
+        "size_stock": 10
+      },
+      {
+        "name": "Large",
+        "size_stock": 13
+      }
+    ]
   },
   {
     "id": 17,
@@ -117,7 +243,21 @@
     "rating": {
       "rate": 3.8,
       "count": 679
-    }
+    },
+    "sizes": [
+      {
+        "name": "Small",
+        "size_stock": 0
+      },
+      {
+        "name": "Medium",
+        "size_stock": 2
+      },
+      {
+        "name": "Large",
+        "size_stock": 3
+      }
+    ]
   },
   {
     "id": 18,
@@ -129,7 +269,21 @@
     "rating": {
       "rate": 4.7,
       "count": 130
-    }
+    },
+    "sizes": [
+      {
+        "name": "Small",
+        "size_stock": 5
+      },
+      {
+        "name": "Medium",
+        "size_stock": 9
+      },
+      {
+        "name": "Large",
+        "size_stock": 3
+      }
+    ]
   },
   {
     "id": 19,
@@ -141,7 +295,21 @@
     "rating": {
       "rate": 4.5,
       "count": 146
-    }
+    },
+    "sizes": [
+      {
+        "name": "Small",
+        "size_stock": 5
+      },
+      {
+        "name": "Medium",
+        "size_stock": 0
+      },
+      {
+        "name": "Large",
+        "size_stock": 3
+      }
+    ]
   },
   {
     "id": 20,
@@ -153,6 +321,20 @@
     "rating": {
       "rate": 3.6,
       "count": 145
-    }
+    },
+    "sizes": [
+      {
+        "name": "Small",
+        "size_stock": 5
+      },
+      {
+        "name": "Medium",
+        "size_stock": 0
+      },
+      {
+        "name": "Large",
+        "size_stock": 0
+      }
+    ]
   }
 ]}

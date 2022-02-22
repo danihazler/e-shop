@@ -1,9 +1,7 @@
-import { Cta } from "components/cta";
 import Image from "next/image";
 import Link from "next/link";
+import { Cta } from "components/cta";
 import styles from "./styles.module.scss";
-
-// TODO: Fix price alignment
 
 export const CardItem = ({ id, img, title, price }) => {
   return (

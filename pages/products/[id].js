@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { HeadHolder } from "components/head";
+import { InputSelect } from "components/input-select";
 import { Cta } from "components/cta";
 import styles from "./styles.module.scss";
 
@@ -12,7 +13,7 @@ const ProductDetail = ({ product }) => {
     <>
       <HeadHolder title="Product detail" keywords="men women clothing" />
       <p className={styles.category}>
-        <span>Category :</span> {product.category.replace('clothing', '')}
+        <span>Category :</span> {product.category}
       </p>
       <section className={styles["product-detail"]}>
         <div className={styles.image}>
@@ -24,14 +25,22 @@ const ProductDetail = ({ product }) => {
             unoptimized
             src={product.image}
             alt={product.title}
+            tabIndex={0}
           />
         </div>
         <div className={styles.info}>
           <h2>{product.title}</h2>
           <p>{product.description}</p>
           <p>U$ {product.price.toFixed(2)}</p>
-          {/* TODO: add quantity option */}
-          <Cta label="Add to basket" handleClick={handleClick} />
+          <div className={styles.controls}>
+            <InputSelect label="Select size" options={product.sizes} />
+            {/* TODO: change quantity available based on selected size */}
+            <InputSelect
+              label="Select quantity"
+              options={[{ name: 1 }, { name: 2 }, { name: 3 }]}
+            />
+            <Cta label="Add to basket" handleClick={handleClick} />
+          </div>
         </div>
       </section>
     </>

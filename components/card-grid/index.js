@@ -13,6 +13,7 @@ export const CardGrid = ({ items }) => {
               img={item.image}
               title={item.title}
               price={item.price}
+              sizes={item.sizes}
             />
           );
         })}
