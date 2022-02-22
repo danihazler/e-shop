@@ -1,0 +1,30 @@
+@import '../../../assets/styles/constants/colors.scss';
+
+.basket-icon {
+    position: relative;
+
+    text {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(50%, 50%);
+        fill: $yellow;
+        font-size: 0.85rem;
+    }
+
+    circle {
+        fill: $orange;
+    }
+
+    &::after {
+        content: '';
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(50%, 50%);
+        background-color: $orange;
+    }
+}
