@@ -9,22 +9,11 @@
         top: 50%;
         left: 50%;
         transform: translate(50%, 50%);
-        fill: $yellow;
+        fill: $blue;
         font-size: 0.85rem;
     }
 
     circle {
-        fill: $orange;
-    }
-
-    &::after {
-        content: '';
-        width: 50px;
-        height: 50px;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(50%, 50%);
-        background-color: $orange;
+        fill: $yellow;
     }
 }
