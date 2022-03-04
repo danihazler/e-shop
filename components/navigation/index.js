@@ -1,9 +1,13 @@
+import { useContext } from "react";
+import { CartContext } from "context/CartContext";
 import Link from "next/link";
 import { links } from "./fixture";
 import { ShopBasketIcon } from "components/icons/shop-basket";
 import styles from "./styles.module.scss";
 
 export const Navigation = () => {
+  const { totalQuantity } = useContext(CartContext);
+
   return (
     <nav className={styles.nav}>
       <ul>
@@ -18,7 +22,7 @@ export const Navigation = () => {
           {/* TODO: once basket page is created, change href */}
           <Link href="/">
             <a>
-              <ShopBasketIcon />
+              <ShopBasketIcon quantity={totalQuantity} />
             </a>
           </Link>
         </li>

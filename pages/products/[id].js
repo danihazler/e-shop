@@ -1,13 +1,13 @@
+import { useContext } from "react";
 import Image from "next/image";
+import { CartContext } from "context/CartContext";
 import { HeadHolder } from "components/head";
 import { InputSelect } from "components/input-select";
 import { Cta } from "components/cta";
 import styles from "./styles.module.scss";
 
 const ProductDetail = ({ product }) => {
-  const handleClick = () => {
-    console.log("Product Added");
-  };
+  const { handleAddToCart } = useContext(CartContext);
 
   return (
     <>
@@ -34,12 +34,10 @@ const ProductDetail = ({ product }) => {
           <p>U$ {product.price.toFixed(2)}</p>
           <div className={styles.controls}>
             <InputSelect label="Select size" options={product.sizes} />
-            {/* TODO: change quantity available based on selected size */}
-            <InputSelect
-              label="Select quantity"
-              options={[{ name: 1 }, { name: 2 }, { name: 3 }]}
+            <Cta
+              label="Add to basket"
+              handleClick={() => handleAddToCart(product)}
             />
-            <Cta label="Add to basket" handleClick={handleClick} />
           </div>
         </div>
       </section>

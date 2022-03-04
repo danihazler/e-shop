@@ -1,10 +1,15 @@
 import styles from "./styles.module.scss";
 
-export const InputSelect = ({ label, options }) => {
+export const InputSelect = ({ label, options, handleChange }) => {
   return (
     <>
       <label htmlFor={label}>{label} : </label>
-      <select id={label} name={label} className={styles["input-select"]}>
+      <select
+        id={label}
+        name={label}
+        className={styles["input-select"]}
+        onChange={handleChange}
+      >
         <option value="">-</option>
         {options.map((opt) => (
           <option
