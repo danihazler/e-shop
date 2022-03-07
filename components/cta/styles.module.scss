@@ -1,6 +1,8 @@
 @import '../../assets/styles/constants/colors.scss';
 @import '../../assets/styles/constants/typography.scss';
 
+// these styles are also used on cart-quick-view buttons
+
 .button {
   display: inline-block;
   background-color: $yellow;

@@ -5,7 +5,8 @@ import styles from "./styles.module.scss";
 import { Cta } from "components/cta";
 
 export const CartQuickView = ({ revealCart, setRevealCart }) => {
-  const { cartInformation, subtotal } = useContext(CartContext);
+  const { handleAddToCart, handleRemoveFromCart, cartInformation, subtotal } =
+    useContext(CartContext);
 
   return (
     <aside
@@ -37,8 +38,23 @@ export const CartQuickView = ({ revealCart, setRevealCart }) => {
                   </figure>
                   <p className={styles.title}>{product.title}</p>
                 </div>
-                {/* TODO: add quantity picker */}
-                <p>U${product.price}</p>
+
+                <div>
+                  <button
+                    className={styles["button-quantity"]}
+                    onClick={() => handleRemoveFromCart(product.id)}
+                  >
+                    -
+                  </button>
+                  <span>{product.amount}</span>
+                  <button
+                    className={styles["button-quantity"]}
+                    onClick={() => handleAddToCart(product)}
+                  >
+                    +
+                  </button>
+                  <p>U${product.price.toFixed(2)}</p>
+                </div>
               </li>
             ))}
           </ul>

@@ -36,6 +36,19 @@ export const CartProvider = ({ children }) => {
   const calculateTotal = (items) =>
     items.reduce((ack, item) => ack + item.amount * item.price, 0);
 
+  const handleRemoveFromCart = (id) => {
+    setCartInformation((prev) =>
+      prev.reduce((ack, item) => {
+        if (item.id === id) {
+          if (item.amount === 1) return ack;
+          return [...ack, { ...item, amount: item.amount - 1 }];
+        } else {
+          return [...ack, item];
+        }
+      }, [])
+    );
+  };
+
   return (
     <CartContext.Provider
       value={{
@@ -43,6 +56,7 @@ export const CartProvider = ({ children }) => {
         totalQuantity,
         subtotal,
         handleAddToCart,
+        handleRemoveFromCart,
       }}
     >
       {children}

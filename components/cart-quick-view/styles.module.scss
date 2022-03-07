@@ -28,6 +28,23 @@
 
             div {
                 padding: 0;
+                justify-content: flex-end;
+
+                button{
+                    flex: none;
+                }
+
+                span {
+                    display: inline-block;
+                    text-align: center;
+                    max-width: 30px;
+                    width: 30px;
+                }
+            
+                p {
+                    display: inline;
+                    margin-left: 0.625rem;
+                }
             }
 
             figure {
@@ -52,11 +69,18 @@
     }
 }
 
-.reveal-cart {
-    transform: translateX(0);
-    opacity: 1;
+.button-quantity {
+    composes: button from '../cta/styles.module.scss';
+    line-height: 1;
+    padding: 0;
+    width: 20px;
 }
 
 .subtotal {
     font-weight: $fw-bold;
+}
+
+.reveal-cart {
+    transform: translateX(0);
+    opacity: 1;
 }
