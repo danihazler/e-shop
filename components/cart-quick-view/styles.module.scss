@@ -1,0 +1,62 @@
+@import '../../assets/styles/constants/colors.scss';
+@import '../../assets/styles/constants/typography.scss';
+@import '../../assets/styles/constants/breakpoints.scss';
+
+.cart-quick-view {
+    background-color: $offWhite;
+    max-width: 18.75rem;
+    min-width: 18.75rem;
+    padding: 1.25rem 1rem;
+    position: absolute;
+    right: -1.875rem;
+    top: 100%;
+    z-index: 5;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity .5s, transform .5s;
+    will-change: opacity, transform;
+
+    &__list {
+        justify-content: flex-start;
+        
+        li {
+            background: $white;
+            border-radius: 5px;
+            padding: 0.625rem;
+            margin: 0.3125rem 0;
+            width: 100%;
+
+            div {
+                padding: 0;
+            }
+
+            figure {
+                margin: 0;
+            }
+
+            p {
+                font-size: 0.875rem;
+
+                &.title {
+                    flex: 3;
+                    padding-left: 0.3125rem;
+                    line-height: 1.2;
+                }
+            }
+       }
+    }
+
+    a {
+        font-size: 1rem;
+        padding: 0.325rem;
+    }
+}
+
+.reveal-cart {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.subtotal {
+    font-weight: $fw-bold;
+}
