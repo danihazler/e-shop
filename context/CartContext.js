@@ -47,6 +47,8 @@ export const CartProvider = ({ children }) => {
         }
       }, [])
     );
+
+    setTotalQuantity((prev) => prev - 1);
   };
 
   return (
