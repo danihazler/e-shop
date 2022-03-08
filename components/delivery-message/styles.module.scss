@@ -1,0 +1,23 @@
+@import '../../assets/styles/constants/colors.scss';
+@import '../../assets/styles/constants/typography.scss';
+
+.delivery-msg {
+    background-color: rgba($blue, 0.9);
+    border-radius: 5px;
+    color: $white;
+    padding: 0.675rem;
+    font-weight: $fw-bold;
+    display: flex;
+    align-items: center;
+
+    span {
+        line-height: 0.8;
+        margin-right: 0.325rem;
+    }
+
+    svg {
+        fill: $white;
+        width: 1.674rem;
+        height: auto;
+    }
+}

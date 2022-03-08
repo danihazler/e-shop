@@ -1,0 +1,94 @@
+@import '../../assets/styles/constants/colors.scss';
+@import '../../assets/styles/constants/typography.scss';
+@import '../../assets/styles/constants/breakpoints.scss';
+
+.checkout{
+    padding: 1.25rem 2rem;
+    
+    @media screen and (min-width: $bpSmall) {
+        display: flex;
+    }
+}
+
+.my-basket {
+    flex: 2;
+
+    h2 {
+        span {
+            color: $midGrey;
+            font-size: 1rem;
+        }
+    }
+
+    p {
+        font-size: 2.250rem;
+    }
+
+    ul {
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0.625rem 0;
+            
+            @media screen and (min-width: $bpSmall) {
+                max-width: 90%;
+            }
+            
+            div {
+                display: inherit;
+                
+                // image & name
+                &:first-of-type {
+                    align-items: inherit;
+                }
+                
+                // quantity & price
+                &:last-of-type {
+                    align-items: center;
+                    flex-shrink: 0;
+                    flex-direction: row-reverse;
+                    
+                    p {
+                        margin-right: 0.625rem;
+                        order: 4;
+                    }
+                    
+                    span {
+                        order: 2;
+                    }
+                    
+                    button {
+                        // minus
+                        &:first-of-type {
+                            order: 3;
+                        }
+                        
+                        // plus
+                        &:last-of-type {
+                            order: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.summary {
+    flex: 1;
+    letter-spacing: 0.0325rem;
+    margin-top: 2.5rem;
+
+    hr {
+        border: 1px solid $yellow;
+    }
+
+    @media screen and (min-width: $bpSmall) {
+        margin-top: 0;
+    }
+}
+
+
+
+    
