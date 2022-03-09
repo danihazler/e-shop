@@ -11,9 +11,10 @@
         background: $white;
         border-radius: 5px;
         box-shadow: 0 1px 4px rgba($orange, 0.26);
+        flex: 1;
         padding: 0.625rem;
         margin: 0.3125rem 0;
-        width: 100%;
+        max-width: 100%;
 
         div {
             padding: 0;

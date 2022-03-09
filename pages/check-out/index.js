@@ -29,13 +29,13 @@ const PageCheckout = () => {
         </div>
         {subtotal > 0 && (
           <div className={styles.summary}>
-            {subtotal >= 70 && <DeliveryMessage isEligible />}
-            {subtotal < 70 && (
-              <DeliveryMessage missingAmount={missingForDelivery.toFixed(2)} />
-            )}
+            <DeliveryMessage
+              isEligible={subtotal >= 70}
+              missingAmount={missingForDelivery.toFixed(2)}
+            />
             <div>
               <p>
-                <b>Subtotal:</b> U$<span>{subtotal.toFixed(2)}</span>
+                <b>Subtotal:</b> U${subtotal.toFixed(2)}
               </p>
               <p>
                 <b>Delivery:</b> {subtotal >= 70 ? "FREE" : "U$3.95"}

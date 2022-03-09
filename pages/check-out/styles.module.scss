@@ -89,6 +89,14 @@
     }
 }
 
+.total {
+    font-weight: $fw-bold;
+    font-size: 1.125rem;
+    
+    @media screen and (min-width: $bpSmall) {
+        font-size: 1.25rem;
+    }
+}
 
 
     
