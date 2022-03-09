@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 
-export const ShopBasketIcon = ({ quantity = 0 }) => (
+export const ShopBasketIcon = ({ quantity = 1 }) => (
   <svg
     className={styles["basket-icon"]}
     height="50"
@@ -11,7 +11,7 @@ export const ShopBasketIcon = ({ quantity = 0 }) => (
   >
     <path d="m27 22v-6h-3v6h-11l5 12h15l5-12z" fillRule="evenodd" />
     <circle cx="39" cy="20" r="9" />
-    <text x="10" y="0">
+    <text x="78%" y="50%" textAnchor="middle">
       {quantity}
     </text>
   </svg>

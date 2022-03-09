@@ -11,27 +11,29 @@ export const Navigation = () => {
   const { totalQuantity } = useContext(CartContext);
 
   return (
-    <nav className={styles.nav}>
-      <ul>
-        {links.map((item) => (
-          <li key={item.name}>
-            <Link href={item.url}>
-              <a>{item.name}</a>
+    <>
+      <nav className={styles.nav}>
+        <ul>
+          {links.map((item) => (
+            <li key={item.name}>
+              <Link href={item.url}>
+                <a>{item.name}</a>
+              </Link>
+            </li>
+          ))}
+          <li>
+            <Link href="/check-out">
+              <a
+                onMouseOver={() => setRevealCart(true)}
+                onMouseLeave={() => setRevealCart(false)}
+              >
+                <ShopBasketIcon quantity={totalQuantity} />
+              </a>
             </Link>
           </li>
-        ))}
-        <li>
-          <Link href="/check-out">
-            <a
-              onMouseOver={() => setRevealCart(true)}
-              onMouseLeave={() => setRevealCart(false)}
-            >
-              <ShopBasketIcon quantity={totalQuantity} />
-            </a>
-          </Link>
-        </li>
-      </ul>
+        </ul>
+      </nav>
       <CartQuickView revealCart={revealCart} setRevealCart={setRevealCart} />
-    </nav>
+    </>
   );
 };

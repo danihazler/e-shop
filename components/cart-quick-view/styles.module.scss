@@ -3,22 +3,27 @@
 @import '../../assets/styles/constants/breakpoints.scss';
 
 .cart-quick-view {
-    background-color: $offWhite;
-    max-width: 18.75rem;
-    min-width: 18.75rem;
-    padding: 1.25rem 1rem;
-    position: absolute;
-    right: -1.875rem;
-    top: 100%;
-    z-index: 5;
-    opacity: 0;
-    transform: translateX(100%);
-    transition: opacity .5s, transform .5s;
-    will-change: opacity, transform;
+    display: none;
 
     a {
         font-size: 1rem;
         padding: 0.325rem;
+    }
+
+    @media screen and (min-width: $bpSmall) {
+        display: block;
+        background-color: $offWhite;
+        max-width: 18.75rem;
+        min-width: 18.75rem;
+        padding: 1.25rem 1rem;
+        position: fixed;
+        right: 0;
+        top: calc(5.813rem - 1.875rem);
+        z-index: 5;
+        opacity: 0;
+        transform: translateX(200%);
+        transition: opacity .5s, transform .5s;
+        will-change: opacity, transform;
     }
 }
 
@@ -27,6 +32,8 @@
 }
 
 .reveal-cart {
-    transform: translateX(0);
-    opacity: 1;
+    @media screen and (min-width: $bpSmall) {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

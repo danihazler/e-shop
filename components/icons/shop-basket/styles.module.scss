@@ -1,14 +1,7 @@
 @import '../../../assets/styles/constants/colors.scss';
 
 .basket-icon {
-    position: relative;
-
     text {
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(50%, 50%);
         fill: $blue;
         font-size: 0.85rem;
     }
@@ -17,3 +10,4 @@
         fill: $yellow;
     }
 }
+
